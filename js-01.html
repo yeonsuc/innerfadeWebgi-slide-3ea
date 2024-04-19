@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자바스크립트 기초 문법 -증감연산자(++,_ _), 함수(function), 반복문(for)</title>
+  <script>
+    // 함수  한줄주석
+    /*  여러줄주석
+함수란?
+키보드, 리모콘
+(함수 : 실행문을 저장했다가 필요할 때 꺼내쓰는 것)
+
+변수 var - variable의 약자
+하나에 한 개의 데이터ㅓ저장
+변수명의 몇앞은 영문, _, $ 만 가능
+변수명 지정시 영문 _ $ 숫자만 가능
+자바스크립트는 무조건 첫번째 요소가 0
+=: 넣으줌을 의미
+    */
+
+/*  ================================================
+    // 증감연산자 : 1씩 증가 ++ / 1씩 감소--
+    ================================================*/
+    var yeonsu = 35;
+    document.write(yeonsu++);
+    document.write("<br>");
+    document.write(yeonsu++);
+    document.write("<br>");
+    document.write(yeonsu++);
+    document.write("<br>");
+    document.write(yeonsu++);
+    document.write("<br>");
+    document.write(yeonsu++);
+    document.write("<br>");
+
+    // 위와 같은데 한줄에 표시
+    var yeonsu = 15;
+    document.write(yeonsu++ +"<br>");
+    document.write(yeonsu++ +"<br>");
+    document.write(yeonsu++ +"<br>");
+    document.write(yeonsu++ +"<br>");
+    document.write(yeonsu++ +"<br>");
+    document.write(yeonsu++ +"<br>");
+    document.write(yeonsu++ +"<br>");
+    document.write(yeonsu++ +"<br>");
+  /* 결과표시
+35
+36
+37
+38
+39
+15
+16
+17
+18
+19
+20
+21
+22
+  */
+
+    var i=7;
+    function ys(){
+      i++;
+      document.write("yeonsu"+i, "<br>");
+    }
+    ys();
+    ys();
+    ys();
+    ys();
+    ys();
+    ys();
+    ys();
+    ys();
+    
+/* 결과표시
+yeonsu8
+yeonsu9
+yeonsu10
+yeonsu11
+yeonsu12
+yeonsu13
+yeonsu14
+yeonsu15
+  */
+
+/*  ================================================
+    // 반복문 (=for) : 초기값, 조건식, 증감식
+    ================================================*/
+    for (var yeonsu = 10; yeonsu >=1; yeonsu--){
+document.write(yeonsu + "<br>");
+    }
+    
+/* 결과표시
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+  */
+
+/*  ================================================
+    // 비교연산자 - 비교할때 사용
+    = : 같다 / !== : 다르다 / > : 크다 / < : 작다     총4가지
+    ================================================*/
+var c=10;
+var d=20;
+document.write( ( c>d) + "<br>"); //faulse
+document.write( ( c<d) + "<br>"); //true
+document.write( ( c==d) + "<br>"); //faulse
+document.write( ( c!==d) + "<br>"); //true
+
+/*  ================================================
+    // 산술연산지 - 더하기,(+) 빼기(-), 곱하기(*), 나누기(/), 나머지(%)
+    ================================================*/
+
+// 이름을 써주세요
+document.write("yeonsu");
+    
+document.write("yeonsu"+"<br>");
+document.write((1+1)+"<br>");
+document.write((8+4)+"<br>");
+document.write((6*7)+"<br>");
+document.write((12/16)+"<br>");
+document.write((10%3)+"<br>");
+/* 결과표시
+yeonsuyeonsu
+2
+12
+42
+0.75
+1
+  */
+
+/*  ================================================
+    // 조건문 (if) - 조건이 참일때, 만족될때만 실행
+    if(조건식){
+      실행문;
+    }
+    ================================================*/
+    var e = 10;
+    var f = 20;
+    var g = 30;
+    if (e>f) {
+      document.write("e가 f보가 큰")  //거짓이라 실행 안됨
+    }
+    else if (f<g) {
+      document.write("f가 g보다 큼")  //거짓이라 실행 안됨
+    }
+    else {
+      document.write("어쩌라구??!!!")
+    }
+    
+       /*
+       결과 : 어쩌라구??!!! 
+       */ 
+    
+
+/*  ================================================
+    // 배열 = 히나의 변수에 여러개의 데이터 저장 사능
+    자바스크립트는 무조건 첫번째 요소가 0임
+    ================================================*/
+    var fruits = ["블루베리","딸기","바나나"]; // 0,1,2
+        document.write("<br><br>"+fruits[0]);
+
+        // var time1="현재 시간은";
+        var time2=1;
+        var time3=2;
+        var time4="시입니다";
+        var time5=time2 + time3 + time4;
+        document.write("<br>"+time5);
+
+
+
+/*  ================================================
+    // 변수의 재할당  위에 yeonsu가 있지만 밑의 10을 씀
+    ================================================*/
+var x = "yeonsu"
+x = 10;
+document.write("<br>" + x);
+/*
+결과 : 10
+*/
+    
+  </script>
+</head>
+<body>
+  

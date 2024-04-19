@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#wrap {
+  width: 1000px;
+  height: 650px;
+  background-color: #838383;
+  display: flex;
+}
+
+/* 한칸 띄는건 자식 */
+#wrap header {
+  width: 200px;
+  height: 650px;
+  background-color: #929191;
+}
+
+#wrap header .logo {
+  width: 200px;
+  height: 100px;
+  background-color: #efffd4;
+}
+
+#wrap header .menu {
+  width: 200px;
+  height: 550px;
+  background-color: #4485ff;
+}
+
+#wrap main .slide {
+  width: 800px;
+  height: 350px;
+  overflow: hidden;    /*마스킹처리 가려줌 가로세로 사이즈가 있어야 함*/
+  background-color: rgb(255, 255, 255);
+  position: relative; /*기준점*/
+}
+/* 위아래슬라이드 컨테이너 */
+#wrap main .slide .topSlide {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* fadeSlide 컨테이너 */
+#wrap main .slide .fadeSlide {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+/* 좌우슬라이드 컨테이너 */
+#wrap main .slide .leftSlide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+
+#wrap main .slide a,
+#wrap main .slide img {
+  display: block;
+}
+
+#wrap main .contents {
+  width: 800px;
+  height: 200px;
+  background-color: rgb(209, 141, 255);
+}
+
+#wrap main footer {
+  width: 800px;
+  height: 100px;
+  background-color: rgb(7, 0, 104);
+}
+
+#wrap main {
+  width: 800px;
+  height: 650px;
+  background-color: #ffa2d5;
+}
